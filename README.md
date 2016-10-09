@@ -1,2 +1,4 @@
-# android-adapter-view-flipper-test
-Adapter view flipper with slide animation between articles
+# AdapterViewFlipper with animations, gesture detecions and edge detections for scroll view
+This example solves the following problem. There are complicated article views with images, text, webview wrapped with scroll view. After scrolling article to top or bottom edge, user should be able to swipe to previous/next article. Solving this task using view pager customized to work in vertical mode was a failure. Hence this solution.
+
+NOTE: For some stupid reason google ViewFlipper uses Animation and AdapterViewFlipper uses ObjectAnimator. Unfortunately for ObjectAnimator setting fraction change is quite challenging. Also AdapterViewFlipper wrapps every with with FrameLayout which makes this task even harder. See: http://stackoverflow.com/questions/24834621/custom-transition-animations-in-adapterviewflipper (solution not implemented in this example)
